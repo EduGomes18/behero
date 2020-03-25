@@ -10,6 +10,7 @@ export const Container = styled.div`
   margin: 32px auto;
 
   & h1 {
+    color: ${Principal};
     margin-top: 80px;
     margin-bottom: 24px;
   }
