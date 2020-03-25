@@ -1,4 +1,6 @@
 import React from "react";
+import api from "../../Services/api";
+
 import { Container, Icon, Title, Form, FormContainer, Links } from "./styles";
 
 import logoImg from "../../Assets/logo.svg";
