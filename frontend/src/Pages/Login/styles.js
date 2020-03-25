@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { FiLogIn } from "react-icons/fi";
+import { Link } from "react-router-dom";
+import { Principal } from "../../Config/Theme";
 
 export const Container = styled.div`
   width: 100%;
@@ -9,7 +11,7 @@ export const Container = styled.div`
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 `;
 
 export const FormContainer = styled.section`
@@ -23,27 +25,14 @@ export const Form = styled.form`
   flex-direction: column;
 `;
 
-export const Link = styled.a`
-  display: flex;
-  align-items: center;
-  margin-top: 40px;
-  color: #41414d;
-  font-size: 18px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: opacity 0.2s;
-
-  &:hover {
-    opacity: 0.8;
-  }
-`;
+export const Links = styled(Link)``;
 
 export const Icon = styled(FiLogIn)`
   margin-right: 10px;
 `;
 
 export const Title = styled.h1`
-  color: #7159c1;
+  color: ${Principal};
   font-size: 32px;
   margin-top: 32px;
   margin-bottom: 32px;
